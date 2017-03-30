@@ -32,7 +32,8 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
     $loik =  (explode ("\n", $text));
     foreach ($loik as $veerg){
-        $suur = substr($veerg,0,1);
+        //$suur = substr($veerg,0,1);
+        $suur = $veerg[0];
         $vaike = substr($veerg, 1);
     echo "<p><span>$suur</span>$vaike</p>";
     }
